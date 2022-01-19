@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  tor:
+    image: bkbhub/tor:latest
+    ports:
+      - 9101-9199:9101-9199
+    environment:
+      FIRST_SOCKS_PORT: 9101
+      LAST_SOCKS_PORT: 9199

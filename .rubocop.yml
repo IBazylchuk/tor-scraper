@@ -1,0 +1,66 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7.4
+  Exclude:
+    - "vendor/**/*"
+    - ".git/**/*"
+    - "tmp/**/*"
+    - "db/**/*"
+    - "doc/**/*"
+    - "bin/**/*"
+    - "log/**/*"
+    - "public/**/*"
+    - "node_modules/**/*"
+Style/Documentation:
+  Enabled: false
+Layout/IndentationStyle:
+  Enabled: true
+Layout/CaseIndentation:
+  IndentOneStep: true
+Layout/LineLength:
+  Max: 120
+Metrics/ClassLength:
+  Max: 250
+Metrics/MethodLength:
+  Max: 30
+Layout/DotPosition:
+  EnforcedStyle: trailing
+Metrics/ModuleLength:
+  Max: 250
+Metrics/BlockLength:
+  IgnoredMethods: ["describe", "context"]
+  Max: 100
+Style/RegexpLiteral:
+  EnforcedStyle: slashes
+  AllowInnerSlashes: true
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
+Style/HashEachMethods:
+  Enabled: false
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
+Style/FrozenStringLiteralComment:
+  Enabled: true
+Layout/IndentationWidth:
+  Enabled: true
+  Width: 2
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+Layout/FirstArrayElementIndentation:
+  IndentationWidth: 2
+Layout/FirstHashElementIndentation:
+  IndentationWidth: 2
+Layout/FirstArgumentIndentation:
+  EnforcedStyle: consistent
+  IndentationWidth: 2
+Metrics/AbcSize:
+  Enabled: false
+Lint/MissingSuper:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+  # EnforcedStyle: nested
+Security/Open:
+  Enabled: false
